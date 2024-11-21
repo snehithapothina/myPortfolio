@@ -212,13 +212,6 @@ Enhanced operational efficiency by reducing mock order creation time by 75% thro
 export const projectsData = [
   {
     type: "WEB-APP",
-    title: "Movie Magnet",
-    image: "movie-magnet",
-    link: "https://movie-magnet-smoky.vercel.app/",
-    source: "https://github.com/vaheedsk36/movie-magnet",
-  },
-  {
-    type: "WEB-APP",
     title: "Portfolio Website",
     image: "portfolio-website",
     link: null,
