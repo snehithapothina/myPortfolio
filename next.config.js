@@ -26,9 +26,12 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, "src", "styles")],
   },
-  output: "export", // Enable static HTML export
-  basePath: "/myPortfolio", // Replace 'repo-name' with your GitHub repository name
+  output: "export", // Enable static HTML export for GitHub Pages
+  basePath: "/myPortfolio", // Replace 'myPortfolio' with your actual GitHub repository name
+  assetPrefix: "/myPortfolio", // Ensure assets (images, CSS, JS) are served correctly
+  images: {
+    unoptimized: true, // Disable Next.js Image Optimization for static exports
+  },
 };
 
 module.exports = nextConfig;
-
