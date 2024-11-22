@@ -82,7 +82,7 @@ export const interestsData = [
 
 const cypressIcon = () => (
   <img 
-    src="public/images/cypressImg.jpg" 
+    src={`${basePath}/images/cypressImg.jpg`} 
     alt="CYPRESS" 
     style={{ 
       width: '60px', 
@@ -160,7 +160,7 @@ export const skillsData = [
   },
   {
     name: "Cypress",
-    icon: "cypressIcon"
+    icon: cypressIcon(),
   }
 ];
 
@@ -169,7 +169,7 @@ export const workData = [
     company: "Amazon",
     designation: " Quality Assuarance Intern",
     duration: "January 2023 - June 2023",
-    companyImg: "amazon.svg",
+    companyImg: "/myPortfolio/images/amazon.svg",
     description: (
       <>
         <ul>
