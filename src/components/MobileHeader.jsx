@@ -12,7 +12,7 @@ export default function MobileHeader({ pathname }) {
 
   useEffect(() => {
     onClose();
-  }, [pathname]);
+  }, [pathname,onClose]);
 
   return (
     <Flex display={{ base: "flex", md: "none" }}>
