@@ -62,7 +62,7 @@ export default function Home() {
             backgroundColor="blueTheme.navBg" // Background color (if needed)
           >
             <Image
-              src="public/ar-profile-transformed.jpg"
+              src="/ar-profile-transformed.jpg"
               alt="profile-image"
               objectFit="cover" // Ensure image covers the circle without distortion
               width="100%" // Make image fill the circle

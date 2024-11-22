@@ -22,8 +22,6 @@ import {
   TbBrandBootstrap,
 } from "react-icons/tb";
 import { BiLogoJquery, BiLogoPostgresql } from "react-icons/bi";
-import Image from 'next/image';
-
 
 import {
   SiPug,
@@ -45,9 +43,6 @@ import {
 } from "react-icons/bs";
 import { GiArchiveResearch, GiArtificialIntelligence } from "react-icons/gi";
 
-// Define base path for dynamic links in assets
-const basePath = '/myPortfolio';  // Update with your actual base path if needed
-
 export const links = [
   { text: "Home", path: "/" },
   { text: "About", path: "/about" },
@@ -64,7 +59,7 @@ export const interestsData = [
     icon: AiFillCode,
   },
   {
-    interest: "Coding",
+    interest: "Coding ",
     icon: BsCodeSlash,
   },
   {
@@ -86,15 +81,28 @@ export const interestsData = [
 ];
 
 const cypressIcon = () => (
-  <Image
-    src="/images/cypressImg.jpg"
-    alt="Cypress"
-    width={60}
-    height={60}
-    style={{
-      borderRadius: '60%',
-      border: '2px solid #fff'
-    }}
+  <img 
+    src="/images/cypressImg.jpg" 
+    alt="CYPRESS" 
+    style={{ 
+      width: '60px', 
+      height: '60px', 
+      borderRadius: '60%', 
+      border: '2px solid #fff' 
+    }} 
+  />
+);
+
+const AmazonLogo = () => (
+  <img 
+    src="/images/cypressImg.jpg" 
+    alt="CYPRESS" 
+    style={{ 
+      width: '60px', 
+      height: '60px', 
+      borderRadius: '60%', 
+      border: '2px solid #fff' 
+    }} 
   />
 );
 
@@ -112,7 +120,7 @@ export const skillsData = [
     icon: TbBrandJavascript,
   },
   {
-    name: "AI & ML",
+    name: "AI & ML ",
     icon: GiArtificialIntelligence,
   },
   {
@@ -132,8 +140,8 @@ export const skillsData = [
     icon: FaPython,
   },
   {
-    name: "JAVA",
-    icon: FaJava,
+   name: "JAVA",
+   icon: FaJava,
   },
   {
     name: "ReactJS",
@@ -165,28 +173,40 @@ export const skillsData = [
   },
   {
     name: "Cypress",
-    icon: cypressIcon,
+    icon: cypressIcon
   }
 ];
 
 export const workData = [
   {
     company: "Amazon",
-    designation: "Quality Assurance Intern",
+    designation: " Quality Assuarance Intern",
     duration: "January 2023 - June 2023",
-    companyImg: `${basePath}/images/amazon.svg`,  // Fixed path with base path
+    companyImg: "amazon.svg",
     description: (
-      <ul>
+      <>
+        <ul>
         <li>Contributed to the Returns Team at Amazon, focusing on return creation and label generation workflows. 
         Streamlined processes and improved system reliability through innovative solutions and rigorous testing.</li>
-        <li>Automated on-call report generation using Tampermonkey scripts and Sidekick, reducing manual effort and increasing efficiency.</li>
-        <li>Developed comprehensive integration test cases, ensuring robustness in scenarios with missing entities, leading to more reliable plugin builds.</li>
-        <li>Conducted regression testing on the cart system, identifying and resolving critical issues in the Merchant Console for smoother shopping experiences.</li>
-        <li>Enhanced operational efficiency by reducing mock order creation time by 75% through automation using Cypress and Python, integrating features like automated tracking ID generation and fulfillment updates.</li>
-        <li>Integrated latency metrics into dashboards for performance optimization, contributing actionable insights for enhanced system performance.</li>
-      </ul>
+        <li>
+Automated on-call report generation using Tampermonkey scripts and Sidekick, reducing manual effort and increasing efficiency. </li>
+<li>
+Developed comprehensive integration test cases, ensuring robustness in scenarios with missing entities, leading to more reliable plugin builds.
+</li>
+<li>
+Conducted regression testing on the cart system, identifying and resolving critical issues in the Merchant Console for smoother shopping experiences.
+</li>
+<li>
+Enhanced operational efficiency by reducing mock order creation time by 75% through automation using Cypress and Python, integrating features like automated tracking ID generation and fulfillment updates.
+</li>
+<li>
+  Integrated latency metrics into dashboards for performance optimization, contributing actionable insights for enhanced system performance.
+          </li>
+        </ul>
+      </>
     ),
   },
+ 
 ];
 
 export const projectsData = [
@@ -256,13 +276,16 @@ export const projectsData = [
 ];
 
 const LeetCodeIcon = () => (
-  <Image
-  src="/images/leetcode_img.png"
-  alt="LeetCode"
-  width={30}
-  height={30}
-  style={{ borderRadius: '50%', border: '2px solid #fff' }}
-/>
+  <img 
+    src="/images/leetcode_img.png" 
+    alt="LeetCode" 
+    style={{ 
+      width: '30px', 
+      height: '30px', 
+      borderRadius: '50%', 
+      border: '2px solid #fff' 
+    }} 
+  />
 );
 
 export const socialMediaLinks = [
@@ -278,6 +301,7 @@ export const socialMediaLinks = [
     backgroundColor: "social.linkedin",
     hoverColor: "gray.600",
   },
+
   {
     href: "https://www.hackerrank.com/profile/pothinasnehasai1",
     icon: FaHackerrank,
@@ -321,4 +345,5 @@ query Publication($after: String) {
     }
   }
 }
+
 `;

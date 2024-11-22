@@ -1,10 +1,10 @@
-// const path = require("path");
+const path = require("path");
 
-// module.exports = {
-//   sassOptions: {
-//     includePaths: [path.join(__dirname, "src", "styles")],
-//   },
-// };
+module.exports = {
+  sassOptions: {
+    includePaths: [path.join(__dirname, "src", "styles")],
+  },
+};
 
 
 // const path = require("path");
@@ -19,32 +19,27 @@
 
 // module.exports = nextConfig;
 
-const path = require("path");
+// const path = require("path");
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  // Sass options configuration (if you're using Sass)
-  sassOptions: {
-    includePaths: [path.join(__dirname, "src", "styles")],
-  },
-  
-  // Output as a static site for GitHub Pages
-  output: "export", // Enables static HTML export for the app
-  
-  // Set basePath to match the repository name on GitHub Pages
-  basePath: "/myPortfolio",  // Replace 'myPortfolio' with your actual repo name
-  
-  // Set assetPrefix to ensure all static assets are loaded with the base path
-  assetPrefix: "/myPortfolio", // Ensures assets are correctly served from the subpath
+// const nextConfig = {
+//   sassOptions: {
+//     includePaths: [path.join(__dirname, "src", "styles")],
+//   },
 
-  // Optional: Configure images (in case you're using Image Optimization)
-  images: {
-    loader: "default",
-    path: "/myPortfolio/", // Correctly handles image paths in a subpath
-  },
-  
-  // Enabling React Strict Mode (optional)
-  reactStrictMode: true,
-};
+//   // Don't use static export if middleware is needed
+//   // output: "export",  // Remove this line
 
-module.exports = nextConfig;
+//   // GitHub Pages settings (if deploying to GitHub Pages)
+//   basePath: "/myPortfolio",  // Replace 'myPortfolio' with your repo name
+//   assetPrefix: "/myPortfolio", // Ensures assets are correctly served from the subpath
+
+//   // Image optimization for static export (remove if not needed)
+//   images: {
+//     loader: "default",
+//     path: "/myPortfolio/",
+//   },
+
+//   reactStrictMode: true,
+// };
+
+// module.exports = nextConfig;
