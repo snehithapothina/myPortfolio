@@ -82,7 +82,7 @@ export const interestsData = [
 
 const cypressIcon = () => (
   <img 
-    src="/images/cypressImg.jpg" 
+    src="public/images/cypressImg.jpg" 
     alt="CYPRESS" 
     style={{ 
       width: '60px', 
@@ -95,7 +95,7 @@ const cypressIcon = () => (
 
 const AmazonLogo = () => (
   <img 
-    src="/images/cypressImg.jpg" 
+    src="public/images/cypressImg.jpg" 
     alt="CYPRESS" 
     style={{ 
       width: '60px', 
@@ -277,7 +277,7 @@ export const projectsData = [
 
 const LeetCodeIcon = () => (
   <img 
-    src="/images/leetcode_img.png" 
+    src="public/images/leetcode_img.png" 
     alt="LeetCode" 
     style={{ 
       width: '30px', 
