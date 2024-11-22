@@ -7,6 +7,18 @@
 // };
 
 
+// const path = require("path");
+
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   sassOptions: {
+//     includePaths: [path.join(__dirname, "src", "styles")],
+//   },
+//   output: "export", // Enable static HTML export
+// };
+
+// module.exports = nextConfig;
+
 const path = require("path");
 
 /** @type {import('next').NextConfig} */
@@ -15,6 +27,8 @@ const nextConfig = {
     includePaths: [path.join(__dirname, "src", "styles")],
   },
   output: "export", // Enable static HTML export
+  basePath: "/myPortfolio", // Replace 'repo-name' with your GitHub repository name
 };
 
 module.exports = nextConfig;
+
