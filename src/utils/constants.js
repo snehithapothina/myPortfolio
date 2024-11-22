@@ -93,19 +93,6 @@ const cypressIcon = () => (
   />
 );
 
-const AmazonLogo = () => (
-  <img 
-    src="public/images/cypressImg.jpg" 
-    alt="CYPRESS" 
-    style={{ 
-      width: '60px', 
-      height: '60px', 
-      borderRadius: '60%', 
-      border: '2px solid #fff' 
-    }} 
-  />
-);
-
 export const skillsData = [
   {
     name: "HTML5",
@@ -173,7 +160,7 @@ export const skillsData = [
   },
   {
     name: "Cypress",
-    icon: cypressIcon
+    icon: "cypressIcon"
   }
 ];
 
